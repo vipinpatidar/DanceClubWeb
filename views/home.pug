@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts
+  script(src='/jquery.js')
+  script(src='/pets.js')
+
+block style
+     style
+      include ../static/style.css
+block content 
+     
+     section#introSection
+        div Welcome to Vipin's Dance Academy
+        div.small Eat Sleep Dance Repeat
+     section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/1.webp")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/2.webp")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/3.webp")
+
+                div.card-content
+                    p This is the best dance academy of the universe
+     section#sponsorsSection
+         h2 Our Sponsors
+          div#sponsors
+           img(src= "/static/imag1.png" )
+           img(src= "/static/img2.jpeg" )
+           img(src="/static/img3.png" )
